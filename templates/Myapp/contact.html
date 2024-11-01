@@ -1,0 +1,30 @@
+<!-- Myapp/templates/Myapp/contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap for styling -->
+    <style>
+        .contact {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+         
+           {% if success %}
+                <div class="alert alert-success" role="alert">
+                    Thank you for connecting!  Your message has been sent.
+                </div>
+             {% else %}
+             <div class="alert alert-danger" role="alert">
+               An error occurred.Please Try again
+            </div>
+            {% endif %}
+   
+</body>
+</html>

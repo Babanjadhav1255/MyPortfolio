@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header Styles */
+header {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/Project/Bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color:white;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-item a {
+    position: relative;
+    color:white;
+    padding-bottom: 5px;
+}
+
+/* Hover Effect for Navbar Links */
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e63946;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #d62839;
+}
+
+.showcase {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.img-box {
+    flex: 1;
+    padding: 1rem;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-box {
+    flex: 1;
+    padding: 2rem;
+    text-align: left;
+}
+
+.about, .contact {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
